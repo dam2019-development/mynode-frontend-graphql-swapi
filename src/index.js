@@ -41,7 +41,7 @@ const getMovies = async () => {
 };
 
 app.get("/", function(req, res) {
-  res.send("Hello World! test 2");
+  res.send("Hello World! test 3");
 });
 app.get("/getMovies", function(req, res) {
   const main = async () => {
