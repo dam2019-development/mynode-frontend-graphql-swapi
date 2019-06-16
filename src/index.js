@@ -41,7 +41,9 @@ const getMovies = async () => {
 };
 
 app.get("/", function(req, res) {
-  res.send("Hello World! test 3");
+  var content = "<h1>test graphql</h1>";
+  content += "<a href='/getMovies'>getMovies</a>";
+  res.send(content);
 });
 app.get("/getMovies", function(req, res) {
   const main = async () => {
