@@ -42,7 +42,9 @@ const getMovies = async () => {
 
 app.get("/", function(req, res) {
   var content = "<h1>test graphql</h1>";
-  content += "<a href='/getMovies'>getMovies</a>";
+  content += "<a href='/getMovies' target='_blank'>getMovies</a>";
+  content +=
+    "<div> <a target='blank' href='https://graphql-swapi.rainerdeyerling.now.sh/'>graphql-swapi</a>";
   res.send(content);
 });
 app.get("/getMovies", function(req, res) {
