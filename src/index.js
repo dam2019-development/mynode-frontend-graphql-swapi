@@ -48,6 +48,10 @@ app.get("/", function(req, res) {
     content += "<div>footer etc.</div> </body></html>";
   res.send(content);
 });
+app.get("/healthcheck", function(req, res) {
+  var content = "ok";
+  res.send(content);
+});
 app.get("/getMovies", function(req, res) {
   const main = async () => {
     const data = await getMovies();
