@@ -45,7 +45,7 @@ app.get("/", function(req, res) {
   content += "<a href='/getMovies' target='_blank'>getMovies</a>";
   content +=
     "<div> <a target='blank' href='https://graphql-swapi.rainerdeyerling.now.sh/'>graphql-swapi</a>";
-    content += "</body></html>";
+    content += "footer etc. </body></html>";
   res.send(content);
 });
 app.get("/getMovies", function(req, res) {
